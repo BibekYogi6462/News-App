@@ -1,0 +1,66 @@
+/* Hover effect on navbar items */
+.hover-effect {
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+.hover-effect:hover {
+  background-color: #ff5c8d; /* A nice hover color */
+  transform: translateY(-2px);
+}
+
+/* Rounded pill style */
+.nav-link.rounded-pill {
+  background-color: grey;
+  color: #f1f1f1;
+  font-weight: 600;
+}
+
+.nav-link.rounded-pill:hover {
+  background-color: #ff5c8d;
+  color: white;
+}
+
+/* Custom spacing and responsive adjustments */
+@media (max-width: 768px) {
+  .navbar-nav {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+/* Card styling for NewsItem */
+.card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border-radius: 10px;
+}
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Truncate text for title and description */
+.text-truncate {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+/* Button styling for 'Read More' */
+.btn-danger {
+  background-color: #e74c3c;
+  border-color: #e74c3c;
+}
+.btn-danger:hover {
+  background-color: #c0392b;
+  border-color: #c0392b;
+}
+
+/* Responsiveness for larger screens */
+@media (min-width: 768px) {
+  .row-cols-md-2 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (min-width: 1200px) {
+  .row-cols-lg-3 {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
